@@ -1,0 +1,51 @@
+<input type="hidden" value="{{user_id}}" id="user" />
+<div class="content">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <span id="player1name" class="right text"> </span>
+      </div>
+      <div class="row">
+        <img id="player1" class="right profile-image" src="/assets/join.png" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row text">
+        <span id="player2name" class="left text"> </span>
+      </div>
+      <div class="row">
+        <img id="player2" class="left profile-image" src="/assets/join.png" />
+      </div>
+    </div>
+  </div>
+  <div class="row text">
+    <span id="status">
+
+    </span>
+  </div>
+  <div class="row">
+    <div id="game">
+      <img data-id="0" class="felt" />
+      <img data-id="1" class="felt" />
+      <img data-id="2" class="felt" />
+
+      <img data-id="3" class="felt" />
+      <img data-id="4" class="felt" />
+      <img data-id="5" class="felt" />
+
+      <img data-id="6" class="felt" />
+      <img data-id="7" class="felt" />
+      <img data-id="8" class="felt" />
+    </div>
+  </div>
+  <div class="row">
+    <div id="scoreboard">
+    <h1 style="text-align:center" >Scoreboard</h1>
+    <ul>
+      {{#each users}}
+      <li>{{point}} - {{name}}</li>
+      {{/each}}
+    </ul>
+    </div>
+  </div>
+</div>
